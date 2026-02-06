@@ -48,7 +48,7 @@ export interface appStack {
 
 const WindowContext = createContext<WindowContextProps>({
   maximizedStates: defaultAppStates,
-  setMaximizedStates: () => {},
+  setMaximizedStates: () => {}, // eslint-disable-line @typescript-eslint/no-empty-function
   minimizedStates: defaultAppStates,
   setMinimizedStates: () => {},
   openStates: defaultOpenStates,

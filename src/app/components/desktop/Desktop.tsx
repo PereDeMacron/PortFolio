@@ -21,12 +21,12 @@ const DesktopAppIcons = () => {
     right: 0,
   });
 
-  const handleMouseDown = () => {
+  const handleMouseDown = (event: React.MouseEvent<HTMLDivElement>) => {
     setMouseHeld(true);
     setXDown(event.clientX);
     setYDown(event.clientY);
     setSelectedBounds({
-      top: 0,
+      top: event.clientY,
       bottom: 0,
       left: 0,
       right: 0,
@@ -37,22 +37,25 @@ const DesktopAppIcons = () => {
     setXUp(0);
     setYUp(0);
   };
-  const handleMouseMove = () => {
-    if (mouseHeld) {
-      setXUp(event.clientX);
-      setYUp(event.clientY);
-      const rightBound = Math.max(xDown, xUp);
-      const leftBound = Math.min(xDown, xUp);
-      const bottomBound = Math.max(yDown, yUp);
-      const topBound = Math.min(yDown, yUp);
-      setSelectedBounds({
-        top: topBound,
-        bottom: bottomBound,
-        left: leftBound,
-        right: rightBound,
-      });
-    }
-  };
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+  if (mouseHeld) {
+    setXUp(event.clientX);
+    setYUp(event.clientY);
+
+    const rightBound = Math.max(xDown, event.clientX);
+    const leftBound = Math.min(xDown, event.clientX);
+    const bottomBound = Math.max(yDown, event.clientY);
+    const topBound = Math.min(yDown, event.clientY);
+
+    setSelectedBounds({
+      top: topBound,
+      bottom: bottomBound,
+      left: leftBound,
+      right: rightBound,
+    });
+  }
+};
+
 
   return (
     <section

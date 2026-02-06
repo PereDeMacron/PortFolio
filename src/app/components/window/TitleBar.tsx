@@ -18,16 +18,17 @@ const TitleBar = ({ src, alt, appName, isSelected }: Props) => {
   const { maximizedStates, setMaximizedStates } = useWindowContext();
   const { setProjectGuide, setResumeGuide } = useWindowContext();
 
-  const handleClick = () => {
-    if (event.detail == 2) {
-      setProjectGuide(false);
-      setResumeGuide(false);
-      setMaximizedStates((prevState) => ({
-        ...prevState,
-        [appName]: !maximizedStates[appName],
-      }));
-    }
-  };
+  const handleClick = (event: React.MouseEvent<HTMLDivElement>) => {
+  if (event.detail === 2) {
+    setProjectGuide(false);
+    setResumeGuide(false);
+    setMaximizedStates((prevState) => ({
+      ...prevState,
+      [appName]: !maximizedStates[appName],
+    }));
+  }
+};
+
 
   return (
     <section
