@@ -27,27 +27,16 @@ const WelcomeGuide = () => {
       <div className={styles.guideMiddleBackground}>
         <div className={styles.guideMiddle}>
           <p className={`${tahomabd.className} ${styles.welcomeHeader}`}>
-            Welcome to Sohail&apos;s personal site!
+            Welcome to Gary&apos;s portfolio!
           </p>
           <p className={`${tahomabd.className} ${styles.welcomeSubHeader}`}>
             What would you like to do?
           </p>
           <section>
             <ArrowLabel
-              label="View My Projects"
+              label="View My Portfolio"
               action={() =>
                 projectPopUp({
-                  setProjectGuide,
-                  setResumeGuide,
-                  setHighlightedApp,
-                  setMaximizedStates,
-                })
-              }
-            />
-            <ArrowLabel
-              label="See My Resume"
-              action={() =>
-                resumePopUp({
                   setProjectGuide,
                   setResumeGuide,
                   setHighlightedApp,
@@ -83,19 +72,6 @@ const WelcomeGuide = () => {
             />
           </section>
         </div>
-      </div>
-      <div className={styles.guideOuter}>
-        <p className={`${tahomabd.className} ${styles.welcomeBottomLabel}`}>
-          Built with React | Function and Design inspired by Windows XP |&nbsp;
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://github.com/SohailSayed/personal-website"
-            className={styles.welcomeBottomLink}
-          >
-            View the code
-          </a>
-        </p>
       </div>
     </section>
   );

@@ -1,7 +1,9 @@
-https://www.sohailsayed.com/
+# Gary Mirambet PortFolio 
 
-Personal website inspired by Windows XP, built with React and NextJS
+built with React and NextJS
 
-## Attribution
+### Attribution
 
-Windows XP Icon - [Vlazteron](http://www.rw-designer.com/user/vlazteron)
+- [Windows XP Project](https://github.com/SohailSayed/winxp-personal-website)
+
+- [Windows XP Icon](http://www.rw-designer.com/user/vlazteron)

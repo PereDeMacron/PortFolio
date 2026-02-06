@@ -2,7 +2,6 @@
 import { useWindowContext } from "@/app/WindowContext";
 import styles from "./start.module.css";
 import TopPanel from "./TopPanel";
-import BottomPanel from "./BottomPanel";
 import MainPanel from "./MainPanel";
 import React, { useEffect } from "react";
 
@@ -39,11 +38,9 @@ const StartPage = () => {
     <section className={styles.startPage} style={{ zIndex: zIndexValue }}>
       <TopPanel />
       <MainPanel />
-      <BottomPanel />
     </section>
   );
 
-  // Having visibility: hidden for all non-open windows/start page might not be efficient, to review in future
   return startOpen ? startPage : <section style={{ visibility: "hidden" }} />;
 };
 

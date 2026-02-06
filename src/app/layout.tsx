@@ -7,8 +7,8 @@ import DesktopLayout from "./components/desktop/layout";
 import StartLayout from "./components/start/layout";
 
 export const metadata: Metadata = {
-  title: "Sohail Sayed",
-  description: "Sohails Personal Site",
+  title: "Gary Mirambet",
+  description: "Gary Mirambet Portfolio",
 };
 
 export default function RootLayout() {

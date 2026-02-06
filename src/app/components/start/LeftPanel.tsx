@@ -14,27 +14,15 @@ const LeftPanel = () => {
             About Me
           </p>
           <IconLabel
-            src="/icons/waterlooIcon.png"
-            alt="University of Waterloo Logo"
-            label="Studying Systems Design Engineering at the University of Waterloo"
-            url="https://uwaterloo.ca/systems-design-engineering/"
+            src="/icons/HolbertonSchoolLogo.png"
+            alt="Holberton School Logo"
+            label="Studying Fullstack Engineering at the Holberton School Bordeaux"
+            url="https://www.holbertonschool.fr/programme/bachelor-ai-augmented-software-engineering"
           />
           <IconLabel
-            src="/icons/weatherNetworkIcon.png"
-            alt="Weather Network Logo"
-            label="Interned this summer as a Software Developer at The Weather Network"
-            url="https://www.theweathernetwork.com/info/about-us"
-          />
-          <IconLabel
-            src="/icons/blueprintLogo.png"
-            alt="UW Blueprint Logo"
-            label="Volunteered as a Developer for the Childrens Aid Society with UW Blueprint"
-            url="https://uwblueprint.org/about"
-          />
-          <IconLabel
-            src="/icons/mapleLeafIcon.png"
-            alt="Maple Leaf"
-            label="Located in Canada"
+            src="/icons/FranceFlag.png"
+            alt="France Flag"
+            label="Located in France (Biarritz-Bordeaux)"
           />
         </section>
         <section className={styles.leftPanelLanguages}>
@@ -42,16 +30,16 @@ const LeftPanel = () => {
             Languages I Frequently Use
           </p>
           <IconLabel
-            src="/icons/pythonIcon.png"
-            alt="Python Logo"
-            label="Python"
-          />
-          <IconLabel
             src="/icons/javascriptIcon.png"
             alt="JS Logo"
             label="Javascript"
           />
-          <IconLabel src="/icons/c++Icon.svg" alt="C++ Logo" label="C++" />
+          <IconLabel
+            src="/icons/cssIcon.png"
+            alt="CSS Logo"
+            label="CSS"
+          />
+          <IconLabel src="/icons/htmlIcon.png" alt="html Logo" label="HTML" />
         </section>
       </div>
     </section>

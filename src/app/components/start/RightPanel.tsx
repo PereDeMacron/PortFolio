@@ -14,16 +14,14 @@ const RightPanel = () => {
           <p className={`${tahomabd.className} ${styles.boldLabel}`}>
             My Interests
           </p>
-          <p className={`${tahoma.className} ${styles.rightPanelText}`}>
-            Using Engineering and Design on impactful problems, especially
-            relating to:
-          </p>
-          <p className={tahoma.className}>• Transportation</p>
-          <p className={tahoma.className}>• Machine Learning</p>
-          <p className={tahoma.className}>• Food Systems</p>
-          <p className={tahoma.className} style={{ margin: "0" }}>
-            I&apos;m seeking Winter 2024 internship opportunities
-          </p>
+          <p className={tahoma.className}>💻 • Web development & UI/UX</p>
+          <p className={tahoma.className}>↳ Building clean, modern and user-friendly web interfaces.</p>
+          <p className={tahoma.className}>🎮 • Game development & scripting </p>
+          <p className={tahoma.className}>↳ Learning and experimenting with the game creation to refine my skills in various fields.</p>
+          <p className={tahoma.className}>🖥️ • Backend & server hosting</p>
+          <p className={tahoma.className}>↳ Managing and optimizing game servers and web projects.</p>
+          <p className={tahoma.className}>🌍 • Tech exploration</p>
+          <p className={tahoma.className}>↳ Exploring new tools, frameworks and technologies.</p>
         </div>
       </section>
       <hr className={styles.rightPanelHR} />
@@ -33,25 +31,19 @@ const RightPanel = () => {
           src="/icons/githubSquareIcon.png"
           alt="GitHub Logo"
           label="My GitHub"
-          url="https://github.com/SohailSayed/"
+          url="https://github.com/PereDeMacron/"
         />
         <IconLabel
           src="/icons/linkedinIcon.svg"
           alt="LinkedIn Logo"
           label="My LinkedIn"
-          url="https://www.linkedin.com/in/sohailsayed/"
+          url="https://www.linkedin.com/in/gary-mirambet-1868b0287/"
         />
         <IconLabel
           src="/icons/emailIcon.png"
           alt="Email Icon"
-          label="sohail.sayed@uwaterloo.ca"
-          url="mailto: sohail.sayed@uwaterloo.ca"
-        />
-        <IconLabel
-          src="/icons/mediumIcon.png"
-          alt="Medium Logo"
-          label="My Writing"
-          url="https://medium.com/@sohailsayed"
+          label="garymbt64@gmail.com"
+          url="mailto: garymbt64@gmail.com"
         />
       </section>
     </section>

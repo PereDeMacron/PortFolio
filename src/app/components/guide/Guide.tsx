@@ -17,7 +17,7 @@ const Guide = () => {
       />
       <section className={styles.guideBoxProject}>
         <p className={`${tahoma.className} ${styles.guideLabel}`}>
-          The project I most recently worked on. Double click to open and try!
+          click to see my portfolio!
         </p>
       </section>
     </div>

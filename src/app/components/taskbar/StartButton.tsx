@@ -92,7 +92,7 @@ const StartButton = () => {
         onMouseLeave={() => handleHover(false)}
         onClick={handleClick}
       />
-      <StartMiddleSection startLabel="About Me" />
+      <StartMiddleSection startLabel="Start" />
       <section
         className={startOpen ? endOpenHoverCheck : endHoverCheck}
         onMouseEnter={() => handleHover(true)}

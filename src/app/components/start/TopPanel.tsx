@@ -11,7 +11,7 @@ const TopPanel = () => {
         <div className={styles.topPanelHeadshotContainer} />
       </div>
       <p className={`${tahoma.className} ${styles.topPanelLabel}`}>
-        Sohail Sayed
+        Gary Mirambet
       </p>
     </section>
   );

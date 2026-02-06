@@ -19,7 +19,7 @@ const IconLabel = ({ src, alt, label, url }: Props) => {
     ? { backgroundColor: "#FFFFCA", border: "red solid" }
     : undefined;
   const isContact =
-    label == "My LinkedIn" || label == "sohail.sayed@uwaterloo.ca";
+    label == "My LinkedIn" || label == "garymbt64@gmail.com";
 
   return (
     <div

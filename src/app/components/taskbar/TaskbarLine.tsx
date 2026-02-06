@@ -11,22 +11,17 @@ const TaskbarLine = () => {
         <SmallAppIcon
           src="/icons/githubIcon.svg"
           alt="Github Icon"
-          url="https://github.com/SohailSayed/"
+          url="https://github.com/PereDeMacron/"
         />
         <SmallAppIcon
           src="/icons/linkedinIcon.svg"
           alt="Linkedin Icon"
-          url="https://www.linkedin.com/in/sohailsayed/"
+          url="https://www.linkedin.com/in/gary-mirambet-1868b0287/"
         />
         <SmallAppIcon
           src="/icons/emailIcon.svg"
           alt="Email Icon"
-          url="mailto: sohail.sayed@uwaterloo.ca"
-        />
-        <SmallAppIcon
-          src="/icons/twitterIcon.svg"
-          alt="Twitter Icon"
-          url="https://twitter.com/sohailmsayed"
+          url="mailto: garymbt64@gmail.com"
         />
       </div>
       <div className={styles.largeAppIconContainer}>

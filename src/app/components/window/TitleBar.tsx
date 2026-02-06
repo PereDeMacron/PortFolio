@@ -19,8 +19,6 @@ const TitleBar = ({ src, alt, appName, isSelected }: Props) => {
   const { setProjectGuide, setResumeGuide } = useWindowContext();
 
   const handleClick = () => {
-    // eslint-disable-next-line no-use-before-define
-    // @ts-expect-error: Type not being considered for event, used to handle double click
     if (event.detail == 2) {
       setProjectGuide(false);
       setResumeGuide(false);

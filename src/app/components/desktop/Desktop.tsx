@@ -9,7 +9,6 @@ import SelectableRectangle from "./SelectableRectangle";
 
 const DesktopAppIcons = () => {
   const { highlightedApp, setHighlightedApp } = useWindowContext();
-  // Might be better to make these a single dictionary state for each, for future review
   const [mouseHeld, setMouseHeld] = useState(false);
   const [xDown, setXDown] = useState(0);
   const [yDown, setYDown] = useState(0);
@@ -24,11 +23,7 @@ const DesktopAppIcons = () => {
 
   const handleMouseDown = () => {
     setMouseHeld(true);
-    // eslint-disable-next-line no-use-before-define
-    // @ts-expect-error: Type not being considered for event, used to find mouse location
     setXDown(event.clientX);
-    // eslint-disable-next-line no-use-before-define
-    // @ts-expect-error: Type not being considered for event, used to find mouse location
     setYDown(event.clientY);
     setSelectedBounds({
       top: 0,
@@ -44,11 +39,7 @@ const DesktopAppIcons = () => {
   };
   const handleMouseMove = () => {
     if (mouseHeld) {
-      // eslint-disable-next-line no-use-before-define
-      // @ts-expect-error: Type not being considered for event, used to find mouse location
       setXUp(event.clientX);
-      // eslint-disable-next-line no-use-before-define
-      // @ts-expect-error: Type not being considered for event, used to find mouse location
       setYUp(event.clientY);
       const rightBound = Math.max(xDown, xUp);
       const leftBound = Math.min(xDown, xUp);
